@@ -1,0 +1,35 @@
+.dcx-cta-card {
+  position: relative; overflow: hidden;
+  background: linear-gradient(135deg, var(--surface) 0%, var(--surface-alt) 100%);
+  border: 1px solid color-mix(in srgb, var(--primary) 30%, var(--border));
+  border-radius: var(--radius-lg);
+  padding: clamp(40px, 7vw, 80px);
+  color: var(--text);
+}
+.dcx-cta-card::before {
+  content: ''; position: absolute; inset: 0;
+  background: linear-gradient(135deg, rgba(132,204,22,0.05) 0%, rgba(167,139,250,0.04) 100%);
+  pointer-events: none;
+}
+.dcx-cta-glow-a {
+  position: absolute; right: -100px; top: -100px;
+  width: 320px; height: 320px;
+  background: radial-gradient(circle, rgba(132,204,22,0.4) 0%, transparent 60%);
+  filter: blur(40px); pointer-events: none;
+}
+.dcx-cta-glow-b {
+  position: absolute; left: -60px; bottom: -100px;
+  width: 280px; height: 280px;
+  background: radial-gradient(circle, rgba(167,139,250,0.3) 0%, transparent 60%);
+  filter: blur(40px); pointer-events: none;
+}
+.dcx-cta-pattern {
+  position: absolute; inset: 0; opacity: 0.04;
+  background-image: linear-gradient(rgba(132,204,22,1) 1px, transparent 1px), linear-gradient(90deg, rgba(132,204,22,1) 1px, transparent 1px);
+  background-size: 32px 32px;
+  pointer-events: none;
+}
+.dcx-cta-content { position: relative; max-width: 720px; z-index: 1; }
+.dcx-cta-heading { color: var(--text); margin: 16px 0 0; }
+.dcx-cta-sub { margin-top: 18px; color: var(--muted); }
+.dcx-cta-buttons { margin-top: 32px; display: flex; flex-wrap: wrap; gap: 12px; }

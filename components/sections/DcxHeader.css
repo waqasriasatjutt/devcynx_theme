@@ -1,0 +1,143 @@
+.dcx-header {
+  position: sticky; top: 0; z-index: 50;
+  background: rgba(10, 10, 15, 0.85);
+  backdrop-filter: saturate(180%) blur(12px);
+  border-bottom: 1px solid var(--border);
+}
+.dcx-header-inner {
+  display: flex; align-items: center; justify-content: space-between;
+  gap: 16px; padding: 12px 24px;
+}
+
+.dcx-brand { display: flex; align-items: center; gap: 10px; text-decoration: none; flex-shrink: 0; }
+.dcx-brand-mark {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 38px; height: 38px; border-radius: 9px;
+  background: var(--surface);
+  border: 1px solid color-mix(in srgb, var(--primary) 40%, var(--border));
+  color: var(--primary);
+  font-family: var(--font-mono), monospace;
+  font-weight: 700; font-size: .76rem;
+  position: relative;
+}
+.dcx-brand-mark::before {
+  content: ''; position: absolute; inset: -1px; border-radius: inherit;
+  background: var(--gradient-primary); opacity: .25; z-index: -1; filter: blur(4px);
+}
+.dcx-brand-bracket { letter-spacing: -.05em; }
+.dcx-brand-text { display: flex; flex-direction: column; line-height: 1.1; }
+.dcx-brand-name { font-family: var(--font-mono), monospace; font-weight: 700; color: var(--text); font-size: 1.02rem; letter-spacing: -.01em; }
+.dcx-brand-tagline { font-size: .68rem; color: var(--muted); font-family: var(--font-mono), monospace; }
+
+.dcx-nav { display: flex; align-items: center; gap: 2px; }
+.dcx-nav-link, .dcx-nav-btn {
+  padding: 8px 12px; border-radius: 6px;
+  font-family: inherit; font-size: .9rem; font-weight: 500;
+  color: var(--muted); background: transparent; border: 0; cursor: pointer;
+  display: inline-flex; align-items: center; gap: 4px;
+  text-decoration: none; white-space: nowrap;
+  transition: all .15s;
+}
+.dcx-nav-link:hover, .dcx-nav-btn:hover {
+  background: var(--surface); color: var(--text);
+}
+.dcx-caret { font-size: .7rem; opacity: .6; }
+
+.dcx-header-cta { display: flex; align-items: center; gap: 8px; flex-shrink: 0; }
+.dcx-header-icon-link {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 36px; height: 36px; border-radius: 6px;
+  color: var(--muted); transition: all .15s;
+}
+.dcx-header-icon-link:hover { color: var(--primary); background: var(--surface); }
+.dcx-cta-btn { padding: 9px 18px; font-size: .9rem; }
+
+/* ── Mega menu ──────────────────────────────────────────── */
+.dcx-mega-wrap { position: relative; }
+.dcx-mega {
+  position: absolute; top: calc(100% + 6px); left: 0;
+  background: var(--surface);
+  border: 1px solid color-mix(in srgb, var(--primary) 22%, var(--border));
+  border-radius: 12px;
+  box-shadow: 0 30px 60px rgba(0,0,0,0.5), 0 0 0 1px color-mix(in srgb, var(--primary) 8%, transparent);
+  opacity: 0; transform: translateY(-8px); pointer-events: none;
+  transition: opacity .15s, transform .15s;
+  z-index: 60; overflow: hidden;
+}
+.dcx-mega-w720 { width: 720px; }
+.dcx-mega-w900 { width: 900px; }
+.dcx-mega-wrap:hover .dcx-mega, .dcx-mega-wrap:focus-within .dcx-mega {
+  opacity: 1; transform: translateY(0); pointer-events: auto;
+}
+.dcx-mega-grid { padding: 24px; display: grid; gap: 24px; }
+.dcx-mega-grid-2 { grid-template-columns: 1fr 1fr; }
+.dcx-mega-grid-3 { grid-template-columns: 1fr 1fr 1fr; gap: 14px; }
+.dcx-mega-grid-4 { grid-template-columns: repeat(4, 1fr); gap: 16px; padding: 20px; }
+.dcx-mega-grid-5 { grid-template-columns: repeat(5, 1fr); gap: 16px; padding: 20px; }
+
+.dcx-mega-cat {
+  font-family: var(--font-mono), monospace;
+  font-size: .7rem; font-weight: 600; letter-spacing: .08em; text-transform: uppercase;
+  color: var(--primary); margin-bottom: 12px;
+}
+
+.dcx-mega-list, .dcx-mega-list-small {
+  list-style: none; padding: 0; margin: 0;
+  display: flex; flex-direction: column; gap: 2px;
+}
+.dcx-mega-item {
+  display: flex; gap: 10px; padding: 8px;
+  border-radius: 6px; text-decoration: none; color: inherit;
+  transition: background .12s;
+}
+.dcx-mega-item:hover { background: var(--surface-alt); }
+.dcx-mega-icon { font-size: 1.2rem; flex-shrink: 0; line-height: 1; }
+.dcx-mega-title { display: block; font-weight: 600; color: var(--text); font-size: .9rem; }
+.dcx-mega-tagline { display: block; font-size: .72rem; color: var(--muted); line-height: 1.35; margin-top: 2px; }
+
+.dcx-mega-item-small {
+  display: flex; align-items: center; gap: 8px;
+  padding: 6px 8px; border-radius: 5px;
+  text-decoration: none; color: var(--muted); font-size: .86rem;
+  transition: all .12s;
+}
+.dcx-mega-item-small:hover { background: var(--surface-alt); color: var(--primary); }
+
+.dcx-mega-foot {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 12px 24px; background: var(--surface-alt);
+  border-top: 1px solid var(--border);
+  font-size: .82rem; font-family: var(--font-mono), monospace;
+}
+.dcx-mega-foot span { color: var(--muted); }
+.dcx-mega-foot a { color: var(--primary); font-weight: 600; text-decoration: none; }
+.dcx-mega-foot a:hover { color: var(--primary-bright); }
+
+/* ── Mobile burger ─────────────────────────────────────── */
+.dcx-burger { display: none; background: none; border: 0; cursor: pointer; padding: 8px; flex-shrink: 0; }
+.dcx-burger span { display: block; width: 22px; height: 2px; background: var(--text); margin: 5px 0; border-radius: 2px; transition: all .2s; }
+.dcx-burger.is-open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+.dcx-burger.is-open span:nth-child(2) { opacity: 0; }
+.dcx-burger.is-open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+.dcx-mobile-nav { display: none; border-top: 1px solid var(--border); background: var(--surface); }
+.dcx-mobile-nav.is-open { display: block; }
+.dcx-mobile-nav-inner { padding: 12px 24px; }
+.dcx-mobile-nav-inner a {
+  display: block; padding: 12px 0; font-weight: 600; font-size: .9rem;
+  color: var(--muted); text-decoration: none;
+  border-bottom: 1px solid var(--border);
+}
+.dcx-mobile-nav-inner a:hover { color: var(--text); }
+.dcx-mobile-nav-inner a:last-child { border-bottom: 0; }
+.dcx-mobile-nav-inner .dcx-mobile-cta { color: var(--primary); }
+
+/* ── Responsive ─────────────────────────────────────────── */
+@media (max-width: 1100px) {
+  .dcx-nav { display: none; }
+  .dcx-burger { display: block; }
+}
+@media (max-width: 700px) {
+  .dcx-cta-btn { padding: 8px 14px; font-size: .82rem; }
+  .dcx-brand-tagline { display: none; }
+}

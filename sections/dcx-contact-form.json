@@ -1,0 +1,7 @@
+{
+  "name": "Devcynx Contact Form (dynamic)",
+  "slug": "dcx-contact-form",
+  "category": "Devcynx",
+  "sequence": 130,
+  "description": "Fully configurable contact form. Edit endpoint URL, method, headers (JSON), payload template (JSON with {{field}}), source tag, success/error messages. Defaults to portal.way4tech.com lead API."
+}

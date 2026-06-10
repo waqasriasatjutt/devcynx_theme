@@ -1,0 +1,7 @@
+{
+  "name": "Devcynx Integrations",
+  "slug": "dcx-integrations",
+  "category": "Devcynx",
+  "sequence": 90,
+  "description": "Pre-built integrations grid - 4 cols of small horizontal cards."
+}

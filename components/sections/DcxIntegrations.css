@@ -1,0 +1,12 @@
+.dcx-int-grid { gap: 12px; margin-top: 40px; }
+.dcx-int-card { padding: 14px; display: flex; align-items: center; gap: 12px; text-decoration: none; color: inherit; }
+.dcx-int-logo {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 40px; height: 40px; border-radius: 8px;
+  background: var(--surface-alt); color: var(--primary);
+  border: 1px solid color-mix(in srgb, var(--primary) 22%, var(--border));
+  font-family: var(--font-mono), monospace; font-weight: 800; font-size: .82rem;
+}
+.dcx-int-name { display: block; font-weight: 600; font-size: .9rem; color: var(--text); }
+.dcx-int-cat { display: block; font-size: .74rem; color: var(--muted); }
+.dcx-int-footer { text-align: center; margin-top: 32px; }

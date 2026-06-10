@@ -1,0 +1,10 @@
+.dcx-section-head-narrow { display: block; }
+.dcx-section-head-narrow .dcx-section-head-text { max-width: 760px; margin-bottom: 40px; }
+.dcx-case-grid { gap: 20px; }
+.dcx-case-card { display: flex; flex-direction: column; text-decoration: none; color: inherit; }
+.dcx-case-chips { display: flex; gap: 6px; }
+.dcx-case-title { margin: 14px 0 8px; font-size: 1.1rem; color: var(--text); }
+.dcx-case-tagline { color: var(--muted); font-size: .92rem; line-height: 1.55; margin: 0; flex: 1; }
+.dcx-case-metrics { display: flex; flex-wrap: wrap; gap: 16px; margin-top: 16px; font-size: .88rem; font-family: var(--font-mono), monospace; }
+.dcx-case-metric-v { font-weight: 800; color: var(--primary); }
+.dcx-case-metric-k { color: var(--muted); }

@@ -1,0 +1,7 @@
+{
+  "name": "Devcynx Page Header",
+  "slug": "dcx-page-header",
+  "category": "Devcynx",
+  "sequence": 15,
+  "description": "Reusable inner-page header with glow + grid bg, eyebrow + h1 + lede."
+}

@@ -1,0 +1,44 @@
+.dcx-footer { background: var(--surface); color: var(--muted); padding: 64px 0 32px; border-top: 1px solid var(--border); }
+.dcx-footer-inner { display: flex; flex-direction: column; gap: 48px; }
+.dcx-footer-main { display: grid; gap: 40px; grid-template-columns: 2.4fr repeat(4, 1fr); }
+@media (max-width: 1000px) { .dcx-footer-main { grid-template-columns: 1fr 1fr 1fr; } }
+@media (max-width: 700px) { .dcx-footer-main { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 480px) { .dcx-footer-main { grid-template-columns: 1fr; } }
+
+.dcx-footer-brand-row { display: flex; align-items: center; gap: 12px; }
+.dcx-footer-brand-name { font-family: var(--font-mono), monospace; color: var(--text); font-weight: 800; font-size: 1.2rem; }
+.dcx-footer-tagline { margin: 16px 0 24px; max-width: 380px; color: var(--muted); font-size: .92rem; line-height: 1.55; }
+.dcx-footer-contact-list { display: flex; flex-direction: column; gap: 10px; font-size: .9rem; }
+.dcx-footer-contact-list a { color: var(--muted); text-decoration: none; }
+.dcx-footer-contact-list a:hover { color: var(--primary); }
+
+.dcx-footer-col-title {
+  color: var(--primary);
+  font-family: var(--font-mono), monospace;
+  font-size: .72rem; font-weight: 600; letter-spacing: .06em;
+  margin-bottom: 14px;
+}
+.dcx-footer-col-list { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 10px; }
+.dcx-footer-col-list a { color: var(--muted); font-size: .9rem; text-decoration: none; transition: color .15s; }
+.dcx-footer-col-list a:hover { color: var(--text); }
+.dcx-footer-col-all { color: var(--primary) !important; font-weight: 600; }
+.dcx-footer-col-all:hover { color: var(--primary-bright) !important; }
+
+.dcx-footer-sub {
+  display: grid; gap: 24px;
+  grid-template-columns: repeat(5, 1fr);
+  padding-top: 32px;
+  border-top: 1px solid var(--border);
+}
+@media (max-width: 900px) { .dcx-footer-sub { grid-template-columns: repeat(3, 1fr); } }
+@media (max-width: 560px) { .dcx-footer-sub { grid-template-columns: repeat(2, 1fr); } }
+.dcx-footer-sub-link { display: block; margin-top: 6px; color: var(--muted); font-size: .88rem; text-decoration: none; }
+.dcx-footer-sub-link:hover { color: var(--text); }
+
+.dcx-footer-bottom {
+  display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px;
+  padding-top: 24px; border-top: 1px solid var(--border);
+  font-size: .82rem; color: var(--muted);
+}
+.dcx-footer-bottom p { margin: 0; }
+.dcx-footer-builtwith { font-family: var(--font-mono), monospace; font-size: .78rem; }

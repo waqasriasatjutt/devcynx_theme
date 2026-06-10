@@ -1,0 +1,8 @@
+.dcx-solutions-grid { gap: 18px; }
+.dcx-solution-card { display: flex; flex-direction: column; text-decoration: none; color: inherit; }
+.dcx-solution-head { display: flex; align-items: center; gap: 12px; }
+.dcx-solution-icon { font-size: 1.6rem; }
+.dcx-solution-title { margin: 0; font-size: 1.1rem; color: var(--text); }
+.dcx-solution-tagline { margin-top: 12px; color: var(--muted); font-size: .92rem; line-height: 1.55; flex: 1; }
+.dcx-solution-link { margin-top: 16px; font-family: var(--font-mono), monospace; font-size: .82rem; font-weight: 600; color: var(--accent); }
+.dcx-solution-card:hover .dcx-solution-link { color: var(--primary); }

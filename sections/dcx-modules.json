@@ -1,0 +1,7 @@
+{
+  "name": "Devcynx Modules Grid",
+  "slug": "dcx-modules",
+  "category": "Devcynx",
+  "sequence": 50,
+  "description": "Dense 4-col Odoo modules grid - icon + category chip + title + tagline."
+}

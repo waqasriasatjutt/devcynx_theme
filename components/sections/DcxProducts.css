@@ -1,0 +1,7 @@
+.dcx-products-grid { gap: 20px; }
+.dcx-product-card { display: flex; flex-direction: column; text-decoration: none; color: inherit; }
+.dcx-product-cat { font-family: var(--font-mono), monospace; font-size: .72rem; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; color: var(--primary); }
+.dcx-product-title { margin: 8px 0 10px; font-size: 1.15rem; color: var(--text); }
+.dcx-product-tagline { color: var(--muted); font-size: .92rem; line-height: 1.55; margin: 0; flex: 1; }
+.dcx-product-link { margin-top: 16px; font-family: var(--font-mono), monospace; font-size: .82rem; font-weight: 600; color: var(--primary); }
+.dcx-product-card:hover .dcx-product-link { color: var(--primary-bright); }

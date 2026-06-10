@@ -1,0 +1,7 @@
+{
+  "name": "Devcynx Header (mega menu)",
+  "slug": "dcx-header",
+  "category": "Devcynx",
+  "sequence": 10,
+  "description": "Dark sticky header with logo, 4 mega-menu dropdowns (Services, Modules, Industries, Stack), flat links (Products, Pricing, Case Studies, Blog), GitHub + 'Talk to us' CTA, mobile burger."
+}

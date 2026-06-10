@@ -1,0 +1,20 @@
+{
+  "name": "devcynx-theme",
+  "version": "1.0.0",
+  "private": true,
+  "description": "devcynx — a dark + neon-lime React/Next.js theme for an Odoo developer agency, built on the websites_portal_odoo platform. 15 reusable sections (mega-menu Header, gradient + grid Hero, glowing card grids, dynamic ContactForm, multi-column Footer) with a JetBrains-Mono accented design language. Author: Waqas Riasat.",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "build:sections": "node scripts/build-sections.mjs"
+  },
+  "dependencies": {
+    "next": "14.2.15",
+    "react": "18.3.1",
+    "react-dom": "18.3.1"
+  },
+  "devDependencies": {
+    "esbuild": "0.23.1"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "name": "devcynx (dark + neon Odoo agency theme)",
+  "slug": "devcynx-theme",
+  "version": "1.0.0",
+  "description": "Dark-mode developer-agency theme for an Odoo consultancy. Near-black canvas (#0a0a0f) + neon lime accent (#84cc16) + subtle violet highlights. JetBrains Mono for code, Inter for body. 15 reusable sections matching the way4tech.com long-tail structure but with a developer-tools aesthetic: mega-menu header, gradient + grid hero, glowing card grids, dynamic ContactForm, multi-column footer.",
+  "colors": {
+    "primary": "#84cc16",
+    "accent": "#a78bfa",
+    "bg": "#0a0a0f",
+    "text": "#f1f5f9",
+    "muted": "#94a3b8",
+    "primary_dim": "#65a30d",
+    "primary_bright": "#a3e635",
+    "surface": "#13131c",
+    "surface_alt": "#1a1a25",
+    "border": "#27272f"
+  },
+  "fonts": {
+    "body": "Inter",
+    "display": "Inter",
+    "mono": "JetBrains Mono"
+  },
+  "extra_tokens": {
+    "radius": "12px",
+    "radius_lg": "20px",
+    "maxw": "1280px",
+    "gradient_primary": "linear-gradient(135deg, #84cc16 0%, #65a30d 100%)",
+    "gradient_glow": "radial-gradient(circle at 20% 30%, rgba(132,204,22,0.18) 0%, transparent 50%), radial-gradient(circle at 80% 70%, rgba(167,139,250,0.12) 0%, transparent 50%)",
+    "grid_bg": "linear-gradient(rgba(132,204,22,0.04) 1px, transparent 1px), linear-gradient(90deg, rgba(132,204,22,0.04) 1px, transparent 1px)"
+  }
+}

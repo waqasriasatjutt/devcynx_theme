@@ -1,0 +1,7 @@
+.dcx-modules-grid { gap: 14px; }
+.dcx-module-card { padding: 18px; display: flex; flex-direction: column; text-decoration: none; color: inherit; }
+.dcx-module-head { display: flex; align-items: center; gap: 8px; }
+.dcx-module-icon { font-size: 1.4rem; }
+.dcx-module-chip { font-size: .64rem; padding: 2px 6px; }
+.dcx-module-title { margin: 12px 0 4px; font-size: 1rem; font-weight: 700; color: var(--text); }
+.dcx-module-tagline { color: var(--muted); font-size: .8rem; line-height: 1.5; margin: 0; }

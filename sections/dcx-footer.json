@@ -1,0 +1,7 @@
+{
+  "name": "Devcynx Footer",
+  "slug": "dcx-footer",
+  "category": "Devcynx",
+  "sequence": 999,
+  "description": "Site footer: brand + 5-col link grid (Services/Modules/Solutions/Countries) + 5-cat sub-row + copyright."
+}

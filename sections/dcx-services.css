@@ -1,0 +1,17 @@
+.dcx-section-head {
+  display: flex; flex-wrap: wrap; align-items: end; justify-content: space-between;
+  gap: 20px; margin-bottom: 48px;
+}
+.dcx-section-head-text { max-width: 720px; }
+.dcx-section-h2 { margin-top: 12px; }
+.dcx-section-lede { margin-top: 16px; }
+.dcx-section-cta { white-space: nowrap; }
+
+.dcx-services-grid { gap: 20px; }
+.dcx-service-card { display: flex; flex-direction: column; text-decoration: none; color: inherit; }
+.dcx-service-head { display: flex; align-items: center; gap: 10px; }
+.dcx-service-icon { font-size: 1.6rem; line-height: 1; }
+.dcx-service-title { margin: 16px 0 8px; color: var(--text); }
+.dcx-service-tagline { color: var(--muted); font-size: .92rem; line-height: 1.55; margin: 0; flex: 1; }
+.dcx-service-link { margin-top: 16px; font-family: var(--font-mono), monospace; font-size: .82rem; font-weight: 600; color: var(--primary); }
+.dcx-service-card:hover .dcx-service-link { color: var(--primary-bright); }

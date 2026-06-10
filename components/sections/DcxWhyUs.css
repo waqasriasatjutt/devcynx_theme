@@ -1,0 +1,7 @@
+.dcx-whyus-grid { display: grid; gap: 40px; grid-template-columns: 1fr 1.2fr; align-items: start; }
+@media (max-width: 900px) { .dcx-whyus-grid { grid-template-columns: 1fr; } }
+.dcx-whyus-cards { gap: 16px; }
+.dcx-whyus-card { position: relative; }
+.dcx-whyus-num { font-family: var(--font-mono), monospace; font-size: .76rem; font-weight: 700; color: var(--primary); margin-bottom: 12px; }
+.dcx-whyus-card-title { font-size: 1.05rem; font-weight: 700; color: var(--text); margin: 0; }
+.dcx-whyus-card-desc { margin: 10px 0 0; color: var(--muted); font-size: .9rem; line-height: 1.55; }
