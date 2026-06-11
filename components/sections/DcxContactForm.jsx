@@ -12,7 +12,7 @@ export default function DcxContactForm({
   page_lede = "Free 30-minute consultation. No obligation, no sales pitch - just an honest conversation about what you're trying to build.",
   form_heading = "Send us a message",
   form_subheading = "We respond within 4 business hours.",
-  endpoint = "https://portal.way4tech.com/wp/api/lead",
+  endpoint = "/api/forms/contact",
   method = "POST",
   headers_json = '{"Content-Type":"application/json","Accept":"application/json"}',
   payload_template = "",
